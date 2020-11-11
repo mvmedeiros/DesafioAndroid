@@ -10,7 +10,7 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.TextView
 
-const val DURACAO_DO_SPLASH = 4000L // L de Long
+const val DURACAO_DO_SPLASH = 1500L // L de Long
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
