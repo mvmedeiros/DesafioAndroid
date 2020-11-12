@@ -1,7 +1,8 @@
-package com.example.desafiomobileandroid
+package com.example.desafiomobileandroid.mainactivity.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.desafiomobileandroid.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
