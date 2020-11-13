@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val navController = findNavController(R.id.nav_host_fragment_container)
+
         val appBarConfiguration = AppBarConfiguration.Builder(
             R.id.signInFragment)
             .build()
