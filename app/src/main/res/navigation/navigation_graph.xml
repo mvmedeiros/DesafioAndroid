@@ -35,6 +35,14 @@
         android:name="com.example.desafiomobileandroid.restaurant.view.RestaurantListFragment"
         tools:layout="@layout/fragment_restaurant_list"
         android:label="@string/app_name">
+        <action
+            android:id="@+id/action_restaurantsListFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="com.example.desafiomobileandroid.restaurant.view.RestaurantFragment"
+        tools:layout="@layout/fragment_restaurant" >
     </fragment>
 
 </navigation>

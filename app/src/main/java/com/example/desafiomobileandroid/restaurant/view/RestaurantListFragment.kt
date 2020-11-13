@@ -43,8 +43,8 @@ class RestaurantListFragment : Fragment() {
         val manager = LinearLayoutManager(context)
 
         val customAdapter = RestaurantListAdapter(restaurant) {
-//            val bundle = bundleOf("NAME" to it.name, "IMAGE" to it.image)
-//            restaurantListView.findNavController().navigate(R.id.action_restaurantsListFragment_to_restaurantFragment, bundle)
+            val bundle = bundleOf("NAME" to it.name, "IMAGE" to it.image)
+            restaurantListView.findNavController().navigate(R.id.action_restaurantsListFragment_to_restaurantFragment, bundle)
         }
 
         recyclerView.apply {
@@ -52,5 +52,12 @@ class RestaurantListFragment : Fragment() {
             layoutManager = manager
             adapter = customAdapter
         }
+    }
+
+    companion object {
+        const val RESTAURANT_NAME = "NAME"
+        const val RESTAURANT_IMAGE = "IMAGE"
+        const val RESTAURANT_ADDRESS = "ADDRESS"
+        const val RESTAURANT_CLOSE_TIME = "CLOSE_TIME"
     }
 }

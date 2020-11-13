@@ -19,7 +19,7 @@ class RestaurantListViewHolder(private val view: View): RecyclerView.ViewHolder(
     fun bind(restaurant: RestaurantModel){
         name.text = restaurant.name
         address.text = restaurant.address
-        closingTime.text = "Fecha às {restaurant.closingTime}."
+        closingTime.text = "Fecha às ${restaurant.closingTime}."
         //Picasso.get().load(restaurant.image).into(image)
         image.setImageDrawable(ContextCompat.getDrawable(view.context, restaurant.image))
     }

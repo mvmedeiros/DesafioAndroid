@@ -39,7 +39,7 @@ class RestaurantRepository {
         return restaurantFinalList
     }
 
-    fun getList(callback: (restaurants: List<RestaurantModel>) -> Unit) {
+    fun getList(callback: (restaurant: List<RestaurantModel>) -> Unit) {
         callback.invoke(getRestaurantList())
     }
 
