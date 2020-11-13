@@ -48,7 +48,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvSectionMainMenu"
-            tools:listitem="@layout/menu_meal" />
+            tools:listitem="@layout/card_meal" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
