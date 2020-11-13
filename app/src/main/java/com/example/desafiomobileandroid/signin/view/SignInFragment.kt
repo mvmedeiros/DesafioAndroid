@@ -24,12 +24,19 @@ class SignInFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val navController = Navigation.findNavController(view)
 
-        register(view, navController)
+        onRegister(view, navController)
+        onLogin(view, navController)
     }
 
-    private fun register(view: View, navController: NavController) {
+    private fun onRegister(view: View, navController: NavController) {
         view.findViewById<Button>(R.id.btnSignInRegister).setOnClickListener {
             navController.navigate(R.id.action_signInFragment_to_registerFragment)
+        }
+    }
+
+    private fun onLogin(view: View, navController: NavController) {
+        view.findViewById<Button>(R.id.btnSignInLogin).setOnClickListener {
+            navController.navigate(R.id.action_signInFragment_to_restaurantListFragment)
         }
     }
 }
